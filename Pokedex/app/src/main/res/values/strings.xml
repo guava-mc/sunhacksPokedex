@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Pokedex</string>
+    <string name="title_home">Pokedex</string>
+    <string name="title_dashboard">Compare</string>
+    <string name="title_notifications">Catch \'em all</string>
+</resources>
