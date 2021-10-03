@@ -3,12 +3,13 @@ package com.sun.hacks.pokedex.pojo;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
 
-public class PokemonBase {
+public class PokemonBase implements Serializable {
     private Integer id;
-    private Map<String, String> names;
+    private Map<String, String> name;
     private List<String> types;
     private Map<String, Integer> base;
 
@@ -21,11 +22,11 @@ public class PokemonBase {
     }
 
     public Map<String, String> getNames() {
-        return names;
+        return name;
     }
 
     public void setNames(Map<String, String> names) {
-        this.names = names;
+        this.name = names;
     }
 
     public List<String> getTypes() {
