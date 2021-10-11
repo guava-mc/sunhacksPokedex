@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
 
-public class PokemonBase implements Serializable {
+public class PokemonBaseO implements Serializable {
     private Integer id;
     private Map<String, String> name;
     private List<String> types;
