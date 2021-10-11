@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.sun.hacks.pokedex.pojo.PokemonBase;
+import com.sun.hacks.pokedex.pojo.PokemonBaseO;
 
 public class FullImageActivity extends Activity {
 
@@ -23,7 +23,7 @@ public class FullImageActivity extends Activity {
 
         // Selected image id
         int position = i.getExtras().getInt("id");
-        PokemonBase pokemon = (PokemonBase) i.getExtras().getSerializable("pokemon");
+        PokemonBaseO pokemon = (PokemonBaseO) i.getExtras().getSerializable("pokemon");
         Log.d("poke", pokemon.toString());
         ImageAdapter imageAdapter = new ImageAdapter(this);
 
